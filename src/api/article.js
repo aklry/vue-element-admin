@@ -1,5 +1,9 @@
 import request from '@/utils/request'
-
+/**
+ * 获取文章列表请求
+ * @param {*}} query
+ * @returns
+ */
 export function fetchList(query) {
   return request({
     url: '/vue-element-admin/article/list',
