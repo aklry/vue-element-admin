@@ -45,6 +45,8 @@
     "xlsx": "0.14.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^14.1.0",
+    "@commitlint/config-conventional": "^14.1.0",
     "@vue/cli-plugin-babel": "4.4.4",
     "@vue/cli-plugin-eslint": "4.4.4",
     "@vue/cli-plugin-unit-jest": "4.4.4",
