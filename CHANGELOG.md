@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.6.0](https://github.com/PanJiaChen/vue-element-admin/compare/v4.5.0...v4.6.0) (2021-11-06)
+
+
+### Features
+
+* 使用mixins技术完成列表页面 ([b94ef45](https://github.com/PanJiaChen/vue-element-admin/commit/b94ef45a4030172665ac5518827f3fded6f71d40))
+
 ## [4.5.0](https://github.com/PanJiaChen/vue-element-admin/compare/v4.0.0...v4.5.0) (2021-11-05)
 
 
