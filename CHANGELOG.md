@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.7.1](https://github.com/PanJiaChen/vue-element-admin/compare/v4.7.0...v4.7.1) (2021-11-06)
+
+
+### Bug Fixes
+
+* **permission.js:** 修复404问题 ([858e695](https://github.com/PanJiaChen/vue-element-admin/commit/858e695517c350bc5734fde85c671ec50c709783))
+
 ## 4.7.0 (2021-11-06)
 
 
