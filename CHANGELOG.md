@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.7.5](https://github.com/PanJiaChen/vue-element-admin/compare/v4.7.4...v4.7.5) (2021-11-06)
+
+
+### Bug Fixes
+
+* **custom.js:** 修改功能与要求一致 ([ce04438](https://github.com/PanJiaChen/vue-element-admin/commit/ce0443874f2e723149908081e9d41c1786494b89))
+
 ### [4.7.4](https://github.com/PanJiaChen/vue-element-admin/compare/v4.7.3...v4.7.4) (2021-11-06)
 
 ### [4.7.3](https://github.com/PanJiaChen/vue-element-admin/compare/v4.7.2...v4.7.3) (2021-11-06)
