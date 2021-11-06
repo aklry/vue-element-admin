@@ -201,12 +201,13 @@ export const asyncRoutes = [{
   },
   children: [{
     path: 'index',
-    component: () => import('@/views/test/index'),
+    component: () => import('@/views/test/form'),
     name: 'Index',
     meta: {
-      title: 'Index',
+      title: 'Form',
       icon: 'icon',
-      noCache: true
+      noCache: true,
+      roles: ['editor']
     }
   }, {
     path: 'table',
@@ -215,7 +216,8 @@ export const asyncRoutes = [{
     meta: {
       title: 'Table',
       icon: 'icon',
-      noCache: true
+      noCache: true,
+      roles: ['admin']
     }
   }]
 },
