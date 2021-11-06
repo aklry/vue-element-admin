@@ -191,12 +191,29 @@ export const asyncRoutes = [{
 {
   path: '/test',
   component: Layout,
+  redirect: '/test/index',
+  alwaysShow: true, // will always show the root menu
+  name: 'Test',
+  meta: {
+    title: 'Test',
+    icon: 'lock',
+    roles: ['admin', 'editor'] // you can set roles in root nav
+  },
   children: [{
     path: 'index',
     component: () => import('@/views/test/index'),
-    name: 'Test',
+    name: 'Index',
     meta: {
-      title: 'Test',
+      title: 'Index',
+      icon: 'icon',
+      noCache: true
+    }
+  }, {
+    path: 'table',
+    component: () => import('@/views/test/table'),
+    name: 'Table',
+    meta: {
+      title: 'Table',
       icon: 'icon',
       noCache: true
     }
