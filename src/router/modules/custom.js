@@ -19,7 +19,7 @@ const customRouter = {
       title: 'Form',
       icon: 'icon',
       noCache: true,
-      roles: ['editor']
+      roles: ['admin']
     }
   }, {
     path: 'table',
@@ -29,7 +29,7 @@ const customRouter = {
       title: 'Table',
       icon: 'icon',
       noCache: true,
-      roles: ['admin']
+      roles: ['editor']
     }
   }]
 }
