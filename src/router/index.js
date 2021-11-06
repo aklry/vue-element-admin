@@ -11,6 +11,7 @@ import componentsRouter from './modules/components'
 import chartsRouter from './modules/charts'
 import tableRouter from './modules/table'
 import nestedRouter from './modules/nested'
+import customRouter from './modules/custom'
 
 /**
  * Note: sub-menu only appear when route children.length >= 1
@@ -188,39 +189,7 @@ export const asyncRoutes = [{
     }
   }]
 },
-{
-  path: '/test',
-  component: Layout,
-  redirect: '/test/index',
-  alwaysShow: true, // will always show the root menu
-  name: 'Test',
-  meta: {
-    title: 'Test',
-    icon: 'lock',
-    roles: ['admin', 'editor'] // you can set roles in root nav
-  },
-  children: [{
-    path: 'index',
-    component: () => import('@/views/test/form'),
-    name: 'Index',
-    meta: {
-      title: 'Form',
-      icon: 'icon',
-      noCache: true,
-      roles: ['editor']
-    }
-  }, {
-    path: 'table',
-    component: () => import('@/views/test/table'),
-    name: 'Table',
-    meta: {
-      title: 'Table',
-      icon: 'icon',
-      noCache: true,
-      roles: ['admin']
-    }
-  }]
-},
+
 {
   path: '/hoc',
   component: Layout,
@@ -254,6 +223,7 @@ componentsRouter,
 chartsRouter,
 nestedRouter,
 tableRouter,
+customRouter,
 
 {
   path: '/example',
