@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.8.0](https://github.com/PanJiaChen/vue-element-admin/compare/v4.7.5...v4.8.0) (2021-11-07)
+
+
+### Features
+
+* 添加按钮级别权限 ([79ffe10](https://github.com/PanJiaChen/vue-element-admin/commit/79ffe10ab1078ce6d5dcf0c18f674f9d31ef6da1))
+* 添加按钮级别权限问题 ([1f8f24b](https://github.com/PanJiaChen/vue-element-admin/commit/1f8f24b2bf9c77349aa81cc6ce58fded43e00708))
+
+
+### Bug Fixes
+
+* **page.vue:** 修改切换时出现404问题 ([449083e](https://github.com/PanJiaChen/vue-element-admin/commit/449083e509abde19aeda96f0582919bf3f6a2d0a))
+
 ### [4.7.5](https://github.com/PanJiaChen/vue-element-admin/compare/v4.7.4...v4.7.5) (2021-11-06)
 
 
