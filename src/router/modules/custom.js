@@ -32,11 +32,11 @@ const customRouter = {
       roles: ['editor']
     }
   }, {
-    path: 'page',
-    component: () => import('@/views/test/page'),
-    name: 'Page',
+    path: 'directive',
+    component: () => import('@/views/test/directive'),
+    name: 'Directive',
     meta: {
-      title: 'Page',
+      title: 'Directive Page',
       icon: 'icon',
       noCache: true,
       roles: ['editor', 'admin']
