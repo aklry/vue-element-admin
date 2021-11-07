@@ -31,6 +31,16 @@ const customRouter = {
       noCache: true,
       roles: ['editor']
     }
+  }, {
+    path: 'page',
+    component: () => import('@/views/test/page'),
+    name: 'Page',
+    meta: {
+      title: 'Page',
+      icon: 'icon',
+      noCache: true,
+      roles: ['editor', 'admin']
+    }
   }]
 }
 export default customRouter
