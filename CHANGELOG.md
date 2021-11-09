@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.9.0](https://github.com/PanJiaChen/vue-element-admin/compare/v4.8.0...v4.9.0) (2021-11-09)
+
+
+### Features
+
+* **src/components/PermissionsButton/index.vue:** 添加一个权限更换按钮组件 ([7530e56](https://github.com/PanJiaChen/vue-element-admin/commit/7530e5692d8dac48cbc3b17b4d2274bc5a2898b6))
+
 ## [4.8.0](https://github.com/PanJiaChen/vue-element-admin/compare/v4.7.5...v4.8.0) (2021-11-07)
 
 
