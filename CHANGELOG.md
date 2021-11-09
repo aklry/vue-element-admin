@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.9.4](https://github.com/PanJiaChen/vue-element-admin/compare/v4.9.3...v4.9.4) (2021-11-09)
+
+
+### Bug Fixes
+
+* **form.vue:** 修改表单校验功能 ([149b9c9](https://github.com/PanJiaChen/vue-element-admin/commit/149b9c92cd818a792be81ed739de9e201a252fa6))
+* **form.vue:** 修改表单校验功能 ([c307896](https://github.com/PanJiaChen/vue-element-admin/commit/c307896207429e0feb29296f4a047c141c205f33))
+* **form.vue:** 修改表单校验功能 ([085fc3b](https://github.com/PanJiaChen/vue-element-admin/commit/085fc3bdac44fa7d077383f012a681c085d5de77))
+* **form.vue:** 修改表单校验功能 ([69517b7](https://github.com/PanJiaChen/vue-element-admin/commit/69517b79c84b425fad462227e27e02536e3da582))
+
 ### [4.9.3](https://github.com/PanJiaChen/vue-element-admin/compare/v4.9.2...v4.9.3) (2021-11-09)
 
 
