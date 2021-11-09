@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.9.1](https://github.com/PanJiaChen/vue-element-admin/compare/v4.9.0...v4.9.1) (2021-11-09)
+
+
+### Bug Fixes
+
+* **/src/router/modules/custom.js,directive.vue:** 去除没有必要的路由以及组件 ([23d2195](https://github.com/PanJiaChen/vue-element-admin/commit/23d21957d9dab53a55a9ad2e7a4df2bc01babd98))
+
 ## [4.9.0](https://github.com/PanJiaChen/vue-element-admin/compare/v4.8.0...v4.9.0) (2021-11-09)
 
 
