@@ -51,7 +51,7 @@ export default {
       phoneRules: [
         {
           test: function(value) {
-            return /^(([0\+]\d{2,3}-)?(0\d{2,3})-)(\d{7,8})(-(\d{3,}))?$/.test(value)
+            return /^1[0-9]{10}$/.test(value)
           },
           message: '请输入正确的电话号码格式'
         }
