@@ -31,16 +31,6 @@ const customRouter = {
       noCache: true,
       roles: ['editor']
     }
-  }, {
-    path: 'directive',
-    component: () => import('@/views/test/directive'),
-    name: 'Directive',
-    meta: {
-      title: 'Directive Page',
-      icon: 'icon',
-      noCache: true,
-      roles: ['editor', 'admin']
-    }
   }]
 }
 export default customRouter
