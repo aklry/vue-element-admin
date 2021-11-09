@@ -2,17 +2,17 @@
   <div class="form-wrapper">
     <s-validate #default="{ validate }" :rules="rules" :value="value">
       <div class="content">
-        <span>活动名称：</span><el-input v-model="value" placeholder="请输入内容" @blur="validate" />
+        <span>姓名：</span><el-input v-model="value" placeholder="请输入姓名" @blur="validate" />
       </div>
     </s-validate>
-    <s-validate #default="{ validate }" :rules="zoneRules" :value="zone">
+    <s-validate #default="{ validate }" :rules="phoneRules" :value="phone">
       <div class="content">
-        <span>活动区域：</span><el-input v-model="zone" placeholder="请输入工作区域" @blur="validate" />
+        <span>账户：</span><el-input v-model="phone" placeholder="请输入电话号码" @blur="validate" />
       </div>
     </s-validate>
-    <s-validate #default="{ validate }" :rules="dateRules" :value="date">
+    <s-validate #default="{ validate }" :rules="passwordRules" :value="password">
       <div class="content">
-        <span>活动时间：</span><el-input v-model="date" placeholder="请选择日期" suffix-icon="el-icon-date" @blur="validate" />
+        <span>密码：</span><el-input v-model="password" type="password" placeholder="请输入密码" @blur="validate" />
       </div>
     </s-validate>
     <div class="content">
@@ -30,8 +30,8 @@ export default {
   data() {
     return {
       value: '',
-      date: '',
-      zone: '',
+      password: '',
+      phone: '',
       rules: [
         {
           test: function(value) {
@@ -40,20 +40,20 @@ export default {
           message: '请输入中文'
         }
       ],
-      dateRules: [
+      passwordRules: [
         {
           test: function(value) {
-            return / ^(\d{4})-(\d{2})-(\d{2})$ /.test(value)
+            return /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,}$/.test(value)
           },
-          message: '请输入正确的日期'
+          message: '请输入正确密码格式(字母、数字、英文符号不包括空格)'
         }
       ],
-      zoneRules: [
+      phoneRules: [
         {
           test: function(value) {
-            return /^[a-z]{0,}$/.test(value)
+            return /^(([0\+]\d{2,3}-)?(0\d{2,3})-)(\d{7,8})(-(\d{3,}))?$/.test(value)
           },
-          message: '请输入英文'
+          message: '请输入正确的电话号码格式'
         }
       ]
     }
