@@ -6,6 +6,7 @@
 
     <div class="right-menu">
       <template v-if="device!=='mobile'">
+        <permission-button class="right-menu-item" @change="handleRolesChange" />
         <search id="header-search" class="right-menu-item" />
 
         <error-log class="errLog-container right-menu-item hover-effect" />
@@ -53,6 +54,7 @@ import ErrorLog from '@/components/ErrorLog'
 import Screenfull from '@/components/Screenfull'
 import SizeSelect from '@/components/SizeSelect'
 import Search from '@/components/HeaderSearch'
+import PermissionButton from '@/components/PermissionsButton'
 
 export default {
   components: {
@@ -61,7 +63,13 @@ export default {
     ErrorLog,
     Screenfull,
     SizeSelect,
-    Search
+    Search,
+    PermissionButton
+  },
+  data() {
+    return {
+      key: this.$store.getters.roles
+    }
   },
   computed: {
     ...mapGetters([
@@ -69,6 +77,7 @@ export default {
       'avatar',
       'device'
     ])
+
   },
   methods: {
     toggleSideBar() {
@@ -77,6 +86,18 @@ export default {
     async logout() {
       await this.$store.dispatch('user/logout')
       this.$router.push(`/login?redirect=${this.$route.fullPath}`)
+    },
+    handleRolesChange(val) {
+      val = this.key[0]
+      if (val === 'admin') {
+        val = 'editor'
+        this.key[0] = 'editor'
+      } else {
+        val = 'admin'
+        this.key[0] = 'admin'
+      }
+      this.$store.dispatch('user/changeRoles', val)
+      this.$router.push('/redirect/')
     }
   }
 }
