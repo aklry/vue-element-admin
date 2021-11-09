@@ -5,7 +5,7 @@
         <span>活动名称：</span><el-input v-model="value" placeholder="请输入内容" @blur="validate" />
       </div>
     </s-validate>
-    <s-validate #default="{ validate }" :rules="rules" :value="zone">
+    <s-validate #default="{ validate }" :rules="zoneRules" :value="zone">
       <div class="content">
         <span>活动区域：</span><el-input v-model="zone" placeholder="请输入工作区域" @blur="validate" />
       </div>
@@ -45,7 +45,15 @@ export default {
           test: function(value) {
             return / ^(\d{4})-(\d{2})-(\d{2})$ /.test(value)
           },
-          message: '请输入中文'
+          message: '请输入正确的日期'
+        }
+      ],
+      zoneRules: [
+        {
+          test: function(value) {
+            return /^[a-z]{0,}$/.test(value)
+          },
+          message: '请输入英文'
         }
       ]
     }
