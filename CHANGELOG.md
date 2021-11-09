@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.9.3](https://github.com/PanJiaChen/vue-element-admin/compare/v4.9.2...v4.9.3) (2021-11-09)
+
+
+### Bug Fixes
+
+* **/views/components:** 删掉没用的组件 ([7bb0630](https://github.com/PanJiaChen/vue-element-admin/commit/7bb06300dff8811b2bb447ce6ba467583567d3e9))
+* **/views/permission/components:** 解决误删问题 ([f12af8e](https://github.com/PanJiaChen/vue-element-admin/commit/f12af8e5ea1e3fd222d3b05449feb9c22f904833))
+
 ### [4.9.2](https://github.com/PanJiaChen/vue-element-admin/compare/v4.9.1...v4.9.2) (2021-11-09)
 
 ### [4.9.1](https://github.com/PanJiaChen/vue-element-admin/compare/v4.9.0...v4.9.1) (2021-11-09)
